@@ -16,10 +16,13 @@ A phone number can be written as:
 * Two groups of 4 digits delimited by a space, like 1234 5678
 * Four groups of 2 digits delimited by a space, like 12 34 56 78
 * Three groups, one of 2 digits and the next of 3 digits, like 12 345 678
-
-<iframe src="https://raw.githubusercontent.com/dasj19/dareco/refs/heads/main/regex/phone-number/end-user-national.regex" width="100%" height="100px"></iframe>
-
+```regex
+(?:\d{8})|(?:\d{2} \d{2} \d{2} \d{2})|(?:\d{4} \d{4})|(?:\d{2} \d{3} \d{3})
+```
 Matches 	
+
 12345678 | 1234 5678 | 12 34 56 78 | 12 345 678
+
 Non-Matches 	
+
 123 456 78 | 12 3456 78 | 1 23 45 67 8 | 55 ab 66 xy
