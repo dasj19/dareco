@@ -12,8 +12,11 @@ The regexes will be split by use case into: end-user format, stored format and v
 
 # Structure
 
+# Regex'es
+* [Phone numbers](/regex/phone-number/README.md)
+
 # TODO
-## Phone numbers
+
 ## Street addresses
 ## ZIP Codes
 ## Plate numbers
